@@ -49,8 +49,6 @@ $pktc = paket();
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <!--style manual-->
 </head>
-
-
 <body id="grad1">
     <div id="app">
         <section class="jumbotron">
