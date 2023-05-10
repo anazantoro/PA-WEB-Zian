@@ -50,6 +50,7 @@ $pktc = paket();
     <!--style manual-->
 </head>
 
+
 <body id="grad1">
     <div id="app">
         <section class="jumbotron">
