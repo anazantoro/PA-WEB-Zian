@@ -49,9 +49,11 @@ $pktc = paket();
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <!--style manual-->
 </head>
+
 <body id="grad1">
     <div id="app">
         <section class="jumbotron">
+            <div align="right"><a href="../carwash/admin/index.php"><button type="button" id="lgn-admin" class="btn btn-primary text-dark">Login Admin</button></a></div>
             <div class="container">
                 <h1 class="display-1" style="color: black; font-family: sans-serif;" align="center">
                     <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
@@ -67,8 +69,8 @@ $pktc = paket();
                 </div>
                 <br><br>
                 <h3 class="display-3" style="color: black; font-size: 24px; font-family: sans-serif;" align="center">Booking cuci mobil,
-                    Lihat harga cuci, Dijamin Bersih <br> Cepat selesai dan banyak lagi</h3>
-                <!-- card -->
+                    Lihat harga cuci, Dijamin Bersih <br> Cepat selesai dan banyak lagi</h3> 
+                <!-- card -->   
                 <div align="center">
                     <div class="row mt-5">
                         <div class="col-lg" data-aos="zoom-in">
@@ -143,7 +145,7 @@ $pktc = paket();
                     <div class="container">
                         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                             <div class="col-md-4 d-flex align-items-center">
-                                <span class="text-muted">&copy; 2023 CleanCars</span>
+                                <span class="text-muted">&copy; 2022 CleanCars</span>
                             </div>
                         </footer>
                     </div>
