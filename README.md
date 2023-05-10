@@ -50,3 +50,26 @@ Manager dapat menambah, mengubah dan menghapus paket pencucian. Dengan mengisi f
 Pesan adalah tempat dimana pelanggan dapat menulis kritik dan saran kepada kami
 
 ## Halaman Admin :
+Sama Seperti role manager admin akan di arahkan ke dalam halaman login terlebih dahulu
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/b8883a18-af12-4fae-8cc1-58c41a7011fe)
+
+Setelah login kemudian akan di arahkan ke halaman dashboard admin
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/2fb20eb2-9e8d-40f4-9427-c3018bce0a7c)
+Dashboard dari admin dan manager sebenarnya tidak terlalu berbeda namun disini admin dapat mengatur segala transaksi yang di lakukan di website CleanCars. Admin juga dapat mengatur data-data dari karyyawan mobil dan paket pencucian seperti manager. Namun ada beberapa function yang manager tidak dapat akses yaitu Market.
+
+**Market**
+Market adalah function untuk mengatur transaksi yang di lakukan. Market sendiri terbagi menjadi 3 bagian yaitu :
+- **Antrian** ![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/ea7fbbc3-89f2-4697-969a-1e28231df6fa) Admin dapat mengatur antrian dari pelanggan seperti menambah mengubah dan menghapus data antrian, Admin juga bertugas mengupdate status dari antrian apakah mobil belum atau sudah di cuci
+
+- **Transaksi** ![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/eb22123b-e3a5-4dec-9a20-94c69618d3ef) Bagian ini adalah bagian dari transaksi pengguna ketika telah selesai mencuci mobil. Sebelum data transaksi masuk admin harus mengisi form untuk menginput data transaksi pada **Antrian** ![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/be0d1219-893e-4e6c-9fd1-7e4a592b9244)
+Setelah itu kemudian data transaksi akan masuk ke dalam function transaksi ![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/f52bca78-0943-4bdc-99e5-ded52e7aeae6) di dalam transaksi admin bertugas untuk menambah data, menghapus dan mencetak nota dari transaksi ![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/f376bd8b-0d5e-4f9c-8142-0059fc005a4d)
+
+- **History** 
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/5ef97063-4949-410a-8f4c-e872bbe26d7d)
+History disini adalah tempat untuk melihat data data yang sebelumnya sudah di tambah/di ubah
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/fc4383c4-55e4-4000-889f-2ff378938ce9)
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/cc13e252-4a2a-417f-8519-51a016d6a335)
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/23c1d8be-2edf-40d3-8ecb-6caa44d45320)
+![image](https://github.com/Bay1510/PA-WEB-Bayu/assets/102432826/a8e90377-8d37-4cac-8bdf-83ee1f4424b0)
+Manager juga dapat mengakses dari History
+
