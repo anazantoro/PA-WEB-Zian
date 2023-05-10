@@ -1,4 +1,6 @@
 # Tutorial Penggunaan WEB CleanCars
+CleanCars adalah sebuah website pencucian mobil, Dimana anda dapat memesan jasa pencucian secara online melalui website.
+CleanCars juga menawarkan paket paket pencucian sehingga anda dapat menentukan paket pencucian sesuai kebutuhan anda.
 
 ## HALAMAN USER :
 ![image](https://github.com/B1-kelompok-5/PA-WEB/assets/102432826/2f30ae56-c4cd-4b60-8027-0a3a914f5422)
