@@ -1,3 +1,7 @@
+# Entity Relationship Diagram ( ERD )
+![WhatsApp Image 2024-04-30 at 19 04 21_dd758f3d](https://github.com/anazantoro/PA-WEB-Zian/assets/119950654/a4e74cfc-17cc-48b9-a9b8-e0c0767d14d6)
+
+
 # Tutorial Penggunaan WEB CleanCars
 CleanCars adalah sebuah website pencucian mobil, Dimana anda dapat memesan jasa pencucian secara online melalui website.
 CleanCars juga menawarkan paket paket pencucian sehingga anda dapat menentukan paket pencucian sesuai kebutuhan anda.
