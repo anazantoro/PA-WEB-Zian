@@ -1,6 +1,61 @@
 # Entity Relationship Diagram ( ERD )
 ![WhatsApp Image 2024-04-30 at 19 04 21_dd758f3d](https://github.com/anazantoro/PA-WEB-Zian/assets/119950654/a4e74cfc-17cc-48b9-a9b8-e0c0767d14d6)
+### Entitas dan Atribut:
 
+Mobil:
+
+no_plat: varchar(15) - Nomor plat mobil
+tipe_mobil: varchar(20) - Jenis mobil (misalnya, sedan, SUV, truk)
+nama_pemilik: varchar(50) - Nama pemilik mobil
+no_pemilik: varchar(14) - Nomor telepon pemilik mobil
+status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
+Merk Mobil:
+
+merk_mobil: varchar(20) - Nama merek mobil
+Ukuran Mobil:
+
+ukuran_mobil: varchar(10) - Ukuran mobil (misalnya, kecil, sedang, besar)
+Antrian:
+
+id_antrian: int(5) - ID antrian unik
+no_plat: varchar(15) - Kunci asing yang merujuk pada atribut no_plat tabel Mobil
+status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
+Paket Pencucian:
+
+id_paket: int(5) - ID paket unik
+nama_paket: varchar(50) - Nama paket cuci mobil
+desc_paket: varchar(200) - Deskripsi paket cuci mobil
+harga_paket: int(10) - Harga paket cuci mobil
+status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
+Pesan:
+
+id_pesan: int(11) - ID pesanan unik
+nama_pesan: varchar(20) - Nama pesanan (mungkin untuk cuci custom)
+email: varchar(50) - Alamat email pelanggan
+no_pesan: varchar(20) - Nomor pesanan
+pesan: varchar(255) - Pesan atau permintaan tambahan dari pelanggan
+status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
+Transaksi:
+
+id_antrian: int(5) - Kunci asing yang merujuk pada atribut id_antrian tabel Antrian
+no_nota: varchar(20) - Nomor nota untuk transaksi
+biaya: int(11) - Biaya layanan cuci mobil
+extra_biaya: int(11) - Biaya layanan tambahan
+total_bayar: int(11) - Total pembayaran yang dilakukan oleh pelanggan
+status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
+Group Pencuci:
+
+id_group: int(10) - ID grup unik
+nama_group: varchar(50) - Nama grup pencuci
+Pencuci:
+
+id_pencuci: int(11) - ID pencuci unik
+nama_pencuci: varchar(50) - Nama pencuci
+no_pencuci: varchar(14) - Nomor telepon pencuci
+jenis_kelamin: enum('L', 'P') - Jenis kelamin pencuci (L untuk laki-laki, P untuk perempuan)
+username: varchar(20) - Nama pengguna untuk pencuci untuk login ke sistem
+password: varchar(50) - Kata sandi untuk pencuci untuk login ke sistem
+status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
 
 # Tutorial Penggunaan WEB CleanCars
 CleanCars adalah sebuah website pencucian mobil, Dimana anda dapat memesan jasa pencucian secara online melalui website.
