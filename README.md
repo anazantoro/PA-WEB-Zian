@@ -2,7 +2,7 @@
 ![WhatsApp Image 2024-04-30 at 19 04 21_dd758f3d](https://github.com/anazantoro/PA-WEB-Zian/assets/119950654/a4e74cfc-17cc-48b9-a9b8-e0c0767d14d6)
 ## Entitas dan Atribut:
 
-##### Mobil:
+### Mobil:
 
 no_plat: varchar(15) - Nomor plat mobil
 tipe_mobil: varchar(20) - Jenis mobil (misalnya, sedan, SUV, truk)
