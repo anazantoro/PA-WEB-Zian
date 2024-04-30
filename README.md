@@ -1,54 +1,44 @@
 # Entity Relationship Diagram ( ERD )
 ![WhatsApp Image 2024-04-30 at 19 04 21_dd758f3d](https://github.com/anazantoro/PA-WEB-Zian/assets/119950654/a4e74cfc-17cc-48b9-a9b8-e0c0767d14d6)
 ## Entitas dan Atribut:
-
 ### Mobil:
-
 no_plat: varchar(15) - Nomor plat mobil
 tipe_mobil: varchar(20) - Jenis mobil (misalnya, sedan, SUV, truk)
 nama_pemilik: varchar(50) - Nama pemilik mobil
 no_pemilik: varchar(14) - Nomor telepon pemilik mobil
 status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
-Merk Mobil:
-
+### Merk Mobil:
 merk_mobil: varchar(20) - Nama merek mobil
-Ukuran Mobil:
-
+### Ukuran Mobil:
 ukuran_mobil: varchar(10) - Ukuran mobil (misalnya, kecil, sedang, besar)
-Antrian:
-
+### Antrian:
 id_antrian: int(5) - ID antrian unik
 no_plat: varchar(15) - Kunci asing yang merujuk pada atribut no_plat tabel Mobil
 status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
-Paket Pencucian:
-
+### Paket Pencucian:
 id_paket: int(5) - ID paket unik
 nama_paket: varchar(50) - Nama paket cuci mobil
 desc_paket: varchar(200) - Deskripsi paket cuci mobil
 harga_paket: int(10) - Harga paket cuci mobil
 status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
-Pesan:
-
+### Pesan:
 id_pesan: int(11) - ID pesanan unik
 nama_pesan: varchar(20) - Nama pesanan (mungkin untuk cuci custom)
 email: varchar(50) - Alamat email pelanggan
 no_pesan: varchar(20) - Nomor pesanan
 pesan: varchar(255) - Pesan atau permintaan tambahan dari pelanggan
 status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
-Transaksi:
-
+### Transaksi:
 id_antrian: int(5) - Kunci asing yang merujuk pada atribut id_antrian tabel Antrian
 no_nota: varchar(20) - Nomor nota untuk transaksi
 biaya: int(11) - Biaya layanan cuci mobil
 extra_biaya: int(11) - Biaya layanan tambahan
 total_bayar: int(11) - Total pembayaran yang dilakukan oleh pelanggan
 status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
-Group Pencuci:
-
+### Group Pencuci:
 id_group: int(10) - ID grup unik
 nama_group: varchar(50) - Nama grup pencuci
-Pencuci:
-
+### Pencuci:
 id_pencuci: int(11) - ID pencuci unik
 nama_pencuci: varchar(50) - Nama pencuci
 no_pencuci: varchar(14) - Nomor telepon pencuci
@@ -56,6 +46,28 @@ jenis_kelamin: enum('L', 'P') - Jenis kelamin pencuci (L untuk laki-laki, P untu
 username: varchar(20) - Nama pengguna untuk pencuci untuk login ke sistem
 password: varchar(50) - Kata sandi untuk pencuci untuk login ke sistem
 status_data: varchar(1) - Status data record (misalnya, aktif, tidak aktif)
+
+### Relasi Antar Tabel:
+
+1. Mobil memiliki hubungan satu-ke-banyak dengan Merk Mobil, artinya satu mobil dapat memiliki satu merek, tetapi satu merek dapat memiliki banyak mobil.
+2. Mobil memiliki hubungan satu-ke-banyak dengan Ukuran Mobil, artinya satu mobil dapat memiliki satu ukuran, tetapi satu ukuran dapat memiliki banyak mobil.
+3. Antrian memiliki hubungan satu-ke-satu dengan Mobil, artinya satu entri antrian hanya untuk satu mobil.
+4. Pesan memiliki hubungan satu-ke-banyak dengan Paket Pencucian, artinya satu pesanan dapat memiliki satu paket cuci mobil, tetapi satu paket cuci mobil dapat memiliki banyak pesanan.
+5. Transaksi memiliki hubungan satu-ke-satu dengan Antrian, artinya satu transaksi hanya untuk satu entri antrian.
+6. Transaksi memiliki hubungan satu-ke-banyak dengan Paket Pencucian, artinya satu transaksi dapat memiliki satu atau lebih paket cuci mobil.
+7. Group Pencuci memiliki hubungan banyak-ke-banyak dengan Pencuci, artinya satu pencuci dapat menjadi anggota dari banyak grup pencuci, dan satu grup pencuci dapat memiliki banyak pencuci.
+
+### Alur Sistem:
+1. Mobil datang dan masuk ke antrian.
+2. Petugas mencatat informasi mobil dan memasukkannya ke dalam sistem.
+3. Pelanggan memilih paket cuci mobil dan/atau memesan cuci custom.
+4. Sistem mencatat pesanan dan menambahkannya ke antrian.
+5. Ketika antrian tiba, mobil dipindahkan ke area cuci.
+6. Pencuci memilih grup pencuci yang sesuai dan memulai cuci mobil.
+7. Sistem mencatat transaksi cuci mobil.
+8. Setelah selesai dicuci, mobil dibersihkan dan dikembalikan kepada pelanggan.
+9. Pelanggan melakukan pembayaran.
+10. Sistem mencatat pembayaran dan memperbarui status transaksi.
 
 # Tutorial Penggunaan WEB CleanCars
 CleanCars adalah sebuah website pencucian mobil, Dimana anda dapat memesan jasa pencucian secara online melalui website.
